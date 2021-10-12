@@ -10,7 +10,10 @@ dns:
   listen: 127.0.0.1:8853
   default-nameserver:
     - 192.168.1.29
-    - 223.5.5.5
+    - 1.0.0.1
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
 proxies:
   - {name: Tokyo-vultr, server: 167.179.70.174, port: 5805, type: ssr, cipher: chacha20-ietf, password: ailo4Oheet1ua`j, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
   - {name: Tokyo-vultr 2, server: 167.179.70.176, port: 5806, type: ssr, cipher: chacha20-ietf, password: ailo4Oheet1ua`j, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
@@ -10302,3 +10305,4 @@ rules:
  - DOMAIN-KEYWORD,XLLiveUD,🎯 全球直连
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
+
